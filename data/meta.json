@@ -1,0 +1,33 @@
+{
+  "name": "CIPD-Chat（中文对话场景注入检测集）",
+  "split_protocol": "模板级 holdout：test 全部使用 train 未见过的攻击/良性措辞模板，衡量对未见表达的泛化",
+  "train": 472,
+  "test": 162,
+  "robustness": 440,
+  "attack_families": [
+    "F1_指令覆盖",
+    "F2_角色劫持",
+    "F3_格式欺骗",
+    "F4_间接注入",
+    "F5_数据外渗_特化",
+    "F6_先天混淆"
+  ],
+  "benign_categories": [
+    "B1_日常闲聊",
+    "B2_知识问答",
+    "B3_任务指令",
+    "B4_合法角色扮演",
+    "B5_个人事务",
+    "B6_内容创作",
+    "B7_长指令_合法",
+    "B8_安全询问_边界"
+  ],
+  "obfuscation_levels": [
+    "L1_装饰",
+    "L2_同音",
+    "L3_拆字",
+    "L4_混合"
+  ],
+  "seed": 20261118,
+  "positive_rate_test": 0.407
+}
